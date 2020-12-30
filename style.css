@@ -1,0 +1,349 @@
+:root{
+    --main-color: #003249;
+    --second-accent: #23D9E7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+.text-color{
+  color: #0069D9;
+}
+.logo-font{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 40px !important;
+}
+
+.color-pe{
+    color: var(--second-accent);
+}
+
+header {
+    position: relative;
+    background-color: black;
+    height: 72vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+  
+  header .container {
+    position: relative;
+    z-index: 2;
+  }
+  
+  header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.5;
+    z-index: 1;
+  }
+  
+  @media (pointer: coarse) and (hover: none) {
+    header {
+      background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+    }
+    header video {
+      display: none;
+    }
+  }
+
+  .format-categorie-abovethefold{
+      font-size: 25px;
+      font-weight: bold;
+      padding: 38px;
+      text-align: center;
+      height: auto;
+  }
+
+  .format-link{
+    color: white !important;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .format-link:hover{
+    border-bottom: 2px solid var(--second-accent);
+    color: grey !important;
+  }
+  
+  .color-containerfluid{
+      background-color: #003166;
+  }
+
+.color-a{
+    color: white !important;
+}
+
+.bg-spedizionegratuita{
+  background-color: #001C29;
+  height: 150px !important;
+}
+
+
+
+.footer-color{
+  background-color: #001E3D;
+  height: auto;
+}
+  
+.logo-footer{
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.finalelogo-footer{
+  font-weight: bold;
+  color: #0069D9;
+}
+
+
+
+
+.format-prodotti{
+  font-size: 30px;
+  text-align: center;
+  color: grey;
+}
+
+.prodotti-migliori{
+  box-shadow: 10px 10px 61px 0px rgba(0,0,0,0.75);
+  border-radius: 10px;
+}
+
+:root {
+  --input-padding-x: 1.5rem;
+  --input-padding-y: .75rem;
+}
+
+
+.card-signin {
+  border: 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-signin .card-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.card-signin .card-img-left {
+  width: 45%;
+  background: scroll center url('https://cdn.pixabay.com/photo/2017/03/15/13/27/rough-horn-2146181_960_720.jpg');
+  background-size: cover;
+}
+
+.card-signin .card-body {
+  padding: 2rem;
+}
+
+.form-signin {
+  width: 100%;
+}
+
+.form-signin .btn {
+  font-size: 80%;
+  border-radius: 5rem;
+  letter-spacing: .1rem;
+  font-weight: bold;
+  padding: 1rem;
+  transition: all 0.2s;
+}
+
+.form-label-group {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-label-group input {
+  height: auto;
+  border-radius: 2rem;
+}
+
+.form-label-group>input,
+.form-label-group>label {
+  padding: var(--input-padding-y) var(--input-padding-x);
+}
+
+.form-label-group>label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  line-height: 1.5;
+  color: #495057;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  transition: all .1s ease-in-out;
+}
+
+.form-label-group input::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input:-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-ms-input-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::-moz-placeholder {
+  color: transparent;
+}
+
+.form-label-group input::placeholder {
+  color: transparent;
+}
+
+.form-label-group input:not(:placeholder-shown) {
+  padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+  padding-bottom: calc(var(--input-padding-y) / 3);
+}
+
+.form-label-group input:not(:placeholder-shown)~label {
+  padding-top: calc(var(--input-padding-y) / 3);
+  padding-bottom: calc(var(--input-padding-y) / 3);
+  font-size: 12px;
+  color: #777;
+}
+
+.btn-google {
+  color: white;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white;
+  background-color: #3b5998;
+}
+
+
+  @media only screen and (max-width: 576px) {
+
+    .mobile-categorie-home{
+      margin-left: 15% !important;
+    }
+
+    .mobile-distance{
+      margin-bottom: 10px !important;
+    }
+
+  }
+
+
+#card {
+  transition: 1s;
+}
+
+#card:hover {
+  transform: scale(1.1);
+}
+
+.halfheader {
+  min-height: 400px;
+  height: 70vh;
+  background: linear-gradient(rgba(245,245,245,1) 20%,rgba(245,245,245,0.5),rgba(245,245,245,1)), url('./bg.png');
+  background-size: cover;
+  background-position: center;
+
+  
+}
+.border-costum {
+  border: 1px solid var(--second-accent) !important;
+  border-radius: 15px !important;
+}
+
+#font-rivenditori{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 40px !important;
+  color: grey;
+}
+
+.bg-color-accent {
+  background-color: var(--second-accent) !important;
+}
+
+.img-radius {
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+}
+
+.bg-maincolor {
+  background-color: var(--main-color);
+
+}
+.utente-titolo{
+  font-weight: bold;
+}
+
+.modifica-form{
+  border: 0px !important;
+  border-bottom: 4px solid #001E3D !important;
+}
+
+.modifica-bottone{
+  border-bottom: 4px solid #001E3D  !important;
+  margin-top: -10px !important;
+}
+
+#FormTitolo{
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#paragrafoForm{
+  color: grey;
+}
+
+#distanceForm{
+  margin-top: 150px !important;
+}
+
+.border-radius-custom {
+  border-radius: 15px !important;
+}
+
+.card-width {
+  width: 15rem;
+}
+.btn-center {
+  text-align: center;
+}
+#btn-opa:hover {
+  opacity: 0.4;
+}
+

@@ -1,0 +1,655 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+    integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" />
+  <title>Muvt</title>
+</head>
+
+<body>
+
+  <!-- NAVBAR-->
+  <nav class="navbar navbar-light shadow-lg">
+    <a class="navbar-brand logo-font" href="#">
+      Muvt<span class="color-pe font-weight-bold">!</span>
+    </a>
+    <button type="button" class="btn btn-outline ml-auto px-5 ml-5 mr-2" data-toggle="modal"
+      data-target="#ModalLogin">Login</button>
+    <button type="button" class="btn btn-primary"><a href="./profilo.html" target="_blank"
+        class="text-decoration-none text-white"><i class="fas fa-plus mr-1"></i>Inserisci un annuncio</a></button>
+  </nav>
+
+
+  <!-- ABOVE THE FOLD       -->
+  <header class="header">
+    <div class="overlay "></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="Mountain - 34608.mp4" type="video/mp4">
+    </video>
+    <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3 logo-font">Muvt<span class="color-pe font-weight-bold">!</span></h1>
+          <p class="lead mb-5 p-format">Festeggia con noi SuperSconti fino al 60%</p>
+          <form>
+            <div class="form-row justify-content-center">
+              <div class="col-12 col-md-3 mobile-distance">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Regione</option>
+                  <option>Lombardia</option>
+                  <option>Lazio</option>
+                  <option>Campania</option>
+                  <option>Sicilia</option>
+                  <option>Veneto</option>
+                  <option>Emilia-Romagna</option>
+                  <option>Piemonte</option>
+                  <option>Puglia</option>
+                  <option>Toscana</option>
+                  <option>Calabria</option>
+                  <option>Sardegna</option>
+                  <option>Liguria</option>
+                  <option>Marche</option>
+                  <option>Abruzzo</option>
+                  <option>Friuli-Venezia Giulia</option>
+                  <option>Trentino-Alto Adige</option>
+                  <option>Umbria</option>
+                  <option>Basilicata</option>
+                  <option>Molise</option>
+                  <option>Valle d'aosta</option>
+                </select>
+
+              </div>
+              <div class="col-12 col-md-4 mobile-distance">
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>Categorie</option>
+                  <option>Elettronica</option>
+                  <option>Motori</option>
+                  <option>Sport</option>
+                  <option>Immobili</option>
+                  <option>Abbigliamento</option>
+                  <option>Arredamento</option>
+                  <option>Giardinaggio</option>
+                  <option>Musica</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-primary font-weight-bold">Cerca!</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="container-fluid color-containerfluid">
+    <div class="row ">
+      <div class="col-12 col-md-3 format-categorie-abovethefold">
+        <a href="./categorie.html" class="text-decoration-none format-link" target="_blank">Categorie<i
+            class="fas fa-folder-open ml-2"></i></a>
+      </div>
+      <div class="col-12 col-md-3 format-categorie-abovethefold">
+        <a href="#" class="text-decoration-none format-link">Contattaci<i class="far fa-address-book ml-2"></i></a>
+
+      </div>
+      <div class="col-12 col-md-3 format-categorie-abovethefold">
+        <a href="#Sponsorizzati" class="text-decoration-none format-link">Prodotti Sponsorizzati <i
+            class="fas fa-fighter-jet"></i></a>
+      </div>
+      <div class="col-12 col-md-3 format-categorie-abovethefold">
+        <a href="#Aggiunti" class="text-decoration-none format-link">Aggiunti di recente<i
+            class="fas fa-calendar-plus ml-2"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <!--           LE CATEGORIE             -->
+  <div class="container  my-5  ">
+    <div class="row  justify-content-center">
+      <div class="col-12 text-center ">
+        <h2 class="logo-font mb-2 "> Le nostre <span class="text-color logo-font">categorie!</span></h2>
+      </div>
+      <div class="container mt-5 mobile-categorie-home">
+        <div class="row ">
+          <div class="col-12 col-md-3 ">
+            <div class="card border-light card-width">
+              <div class="card-body bg-maincolor border-radius-custom ">
+                <p class="text-center text-white py-3 h5"><i class="fas fa-tablet-alt"></i> Elettronica</p>
+                <div id="btn-opa" class="btn-center"><a href="./categorie.html" target="_blank"
+                    class="btn text-white bg-maincolor border-white"><span class="small">Cerca In Elettronica</span></a>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card border-light card-width ">
+              <div class="card-body bg-maincolor border-radius-custom ">
+                <p class="text-center text-white py-3 h5"><i class="fas fa-motorcycle"></i> Motori</p>
+                <div id="btn-opa" class="btn-center"><a href="./categorie.html" target="_blank"
+                    class="btn text-center  text-white bg-maincolor border-white"><span class="small">Cerca
+                      In Motori</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card border-light card-width ">
+              <div class="card-body bg-maincolor border-radius-custom ">
+                <p class="text-center text-white py-3 h5"><i class="fas fa-running"></i> Sport</p>
+                <div id="btn-opa" class="btn-center"> <a href="./categorie.html" target="_blank"
+                    class="btn text-center  text-white bg-maincolor border-white"><span class="small">Cerca
+                      In Sport</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card border-light card-width mb-3 ">
+              <div class="card-body bg-maincolor border-radius-custom ">
+                <p class="text-center text-white py-3 h5"><i class="fas fa-home"></i> Immobili</p>
+                <div id="btn-opa" class="btn-center"> <a href="./categorie.html" target="_blank"
+                    class="btn text-center  text-white bg-maincolor border-white"><span class="small">Cerca
+                      In Immobili</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card border-light card-width ">
+              <div class="card-body bg-maincolor border-radius-custom ">
+                <p class="text-center text-white py-3 h5"><i class="fas fa-tshirt"></i> Abbigliamento</p>
+                <div id="btn-opa" class="btn-center"> <a href="./categorie.html" target="_blank"
+                    class="btn text-center  text-white bg-maincolor border-white "><span class="small">Cerca
+                      In Abbigliamento</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card border-light card-width ">
+              <div class="card-body bg-maincolor border-radius-custom ">
+                <p class="text-center text-white py-3 h5"><i class="fas fa-couch"></i> Arredamento</p>
+                <div id="btn-opa" class="btn-center"> <a href="./categorie.html" target="_blank"
+                    class="btn text-center  text-white bg-maincolor border-white">Cerca Arredamento</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card border-light card-width ">
+              <div class="card-body bg-maincolor border-radius-custom ">
+                <p class="text-center text-white py-3 h5"><i class="fas fa-leaf"></i> Giardinaggio</p>
+                <div id="btn-opa" class="btn-center"> <a href="./categorie.html" target="_blank"
+                    class="btn text-center  text-white bg-maincolor border-white"><span class="small">Cerca
+                      In Giardinaggio</span></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-3">
+            <div class="card border-light card-width ">
+              <div class="card-body bg-maincolor border-radius-custom ">
+                <p class="text-center text-white py-3 h5"><i class="fas fa-music"></i> Musica</p>
+                <div id="btn-opa" class="btn-center"> <a href="./categorie.html" target="_blank"
+                    class="btn text-center  text-white bg-maincolor border-white "><span class="small">Cerca
+                      In Musica</span></a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!--                  PRODOTTI SPONSORIZZATI -->
+      <div class="container mt-5 d-container">
+        <div class="row mt-5">
+          <div class="col-12">
+            <h2 class="logo-font" id="Sponsorizzati">Prodotti sponsorizzati da Muvt!</h2>
+            <div class="card-carousel">
+              <div>
+                <div class="card card-custom mt-5 border-costum " style="width: 15rem; border-radius: 15px; ">
+                  <img src="https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/11/88/118825.jpg"
+                    class="img-fluid img-thumbnail " alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      APPLE MacBook Pro 16</h5>
+                    <p class="card-text small">Processore Intel® Core™ I9 8-core 9^ generazione 2,3 GHz
+                      Turbo Boost fino a 4,8 GHz - SSD: 1000 GB - RAM: 16 GB
+                    </p>
+                    <a href="./Prodotto.html" class="btn text-white bg-color-accent" target="_blank">Dettagli</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card card-custom mt-5 border-costum " style="width: 15rem; border-radius: 15px; ">
+                  <img src="https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/13/97/139717.jpg"
+                    class="img-fluid img-thumbnail " alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">PREVENDITA SONY PlayStation 5</h5>
+                    <p class="card-text small">HDMI - USB
+                      Unità Blu-ray 4K UHD
+                      SSD da 825 GB
+                      Controller wireless DualSense</p>
+                    <a href="./Prodotto.html" class="btn text-white bg-color-accent" target="_blank">Dettagli</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card card-custom mt-5 border-costum " style="width: 15rem; border-radius: 15px; ">
+                  <img src="https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/11/20/112094_thumb.jpg"
+                    class="img-fluid img-thumbnail " alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">APPLE iPhone 11 128GB</h5>
+                    <p class="card-text small">Display Liquid Retina HD 6,1'' - iOS 13
+                      Processore A13 Bionic Dual Core
+                    </p>
+                    <a href="./Prodotto.html" class="btn text-white bg-color-accent" target="_blank">Dettagli</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card card-custom mt-5 border-costum " style="width: 15rem; border-radius: 15px; ">
+                  <img src="https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/12/99/129982_thumb.jpg"
+                    class="img-fluid img-thumbnail " alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">SAMSUNG QLED QE65Q60TAUXZT</h5>
+                    <p class="card-text small">SMART TV QLED 65'' 4K - Risoluzione: 3840x2160 pixel - Frequenza: 60 Hz -
+                      WiFi + Ethernet</p>
+                    <a href="./Prodotto.html" class="btn text-white bg-color-accent" target="_blank">Dettagli</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card card-custom mt-5 border-costum " style="width: 15rem; border-radius: 15px; ">
+                  <img src="https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/13/91/139101_thumb.jpg"
+                    class="img-fluid img-thumbnail " alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">PHILIPS Hue Runner 2 Faretti+ Dim</h5>
+                    <p class="card-text small">Colore: Bianco Ambience - Potenza: 5 W
+                      2 Lampadine </p>
+                    <a href="./Prodotto.html" class="btn text-white bg-color-accent" target="_blank">Dettagli</a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="card card-custom mt-5 border-costum " style="width: 15rem; border-radius: 15px; ">
+                  <img src="https://www.romolini.com/userfiles/tipologia/41/B-villa-in-vendita-italia.jpg"
+                    class="img-fluid img-thumbnail " alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Villa - Salento</h5>
+                    <p class="card-text small">Villa in vendita , piscina e tanto altro che scoprirai solamente
+                      venendo a visitare la villa
+                    </p>
+                    <a href="./Prodotto.html" class="btn text-white bg-color-accent" target="_blank">Dettagli</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="margin-top: 10% !important;">
+    <div class="container mt-5">
+      <div class="row mt-5">
+        <div class="col-12">
+          <span id="font-rivenditori">Siamo rivenditori ufficiali di:</span>
+        </div>
+        <div class="col-12 text-center">
+          <img src="https://www.mediaworld.it/frontend/2018-08/box-sis-bose%5B1%5D.jpg" class=" ml-5 mt-3 img-fluid">
+          <img src="https://www.mediaworld.it/frontend/2018-08/logo-samsung-menu-124x60%5B1%5D.jpg"
+            class=" ml-5 mt-3 img-fluid">
+          <img src="https://www.mediaworld.it/frontend/2018-08/logo-Apple%5B1%5D.jpg" class="ml-5 mt-3 img-fluid">
+        </div>
+      </div>
+    </div>
+    <hr style="margin-bottom: 10% !important;">
+
+
+
+
+
+
+
+
+
+
+
+    <!--                  PRODOTTI AGGIUNTI DI RECENTE   -->
+
+    <div class="container mt-5 d-container">
+      <div class="row mt-5">
+        <div class="col-12">
+          <h2 class="logo-font" id="Aggiunti">Aggiunti di recente</h2>
+          <div class="ultimi-arrivi">
+            <div>
+              <div class="card card-custom mt-5 border-costum " style="width: 15rem; border-radius: 15px; ">
+                <img src="https://www.formulapassion.it/wp-content/uploads/2019/12/23112019-KRR00770-666x381.jpg"
+                  class="img-fluid img-thumbnail " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Giulia Qv</h5>
+                  <p class="card-text small"> 2.9 V6 BiturboFari bixeno , navigatore 8" , aiuto guida </p>
+                  <a href="./Prodotto.html" class="btn text-white bg-color-accent" target="_blank">Dettagli</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card card-custom mt-5 border-costum " style="width: 15rem; border-radius: 15px; ">
+                <img src="https://www.ravennatoday.it/~media/horizontal-hi/34849104757845/garage-2.jpg"
+                  class="img-fluid img-thumbnail " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Garage Auto</h5>
+                  <p class="card-text small"> Affitto garage a Milano di infiniti mq , 4 posti auto , 3 posti moto
+                  </p>
+                  <a href="./Prodotto.html" class="btn text-white bg-color-accent" target="_blank">Dettagli</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card card-custom mt-5 border-costum " style="width: 15rem; border-radius: 15px; ">
+                <img src="https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/98/50/985051_thumb.jpg"
+                  class="img-fluid img-thumbnail " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">BOSE LIFESTYLE 550</h5>
+                  <p class="card-text small">Sist.Hi-Fi 5.1 E Oltre
+                    Sistema home cinema 5.1
+                  </p>
+                  <a href="./Prodotto.html" class="btn text-white bg-color-accent" target="_blank">Dettagli</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card card-custom mt-5 border-costum " style="width: 15rem; border-radius: 15px; ">
+                <img src="https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/98/81/988162_thumb.jpg"
+                  class="img-fluid img-thumbnail " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">APPLE iPad Pro 12,9"</h5>
+                  <p class="card-text small">Processore: Chip A12X Bionic con architettura a 64 bit
+                    Coprocessore: M12 integrato</p>
+                  <a href="./Prodotto.html" class="btn text-white bg-color-accent" target="_blank">Dettagli</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card card-custom mt-5 border-costum " style="width: 15rem; border-radius: 15px; ">
+                <img src="https://asset.mediaw.it/wcsstore/MMCatalogAssetStore/asset/images/14/03/140377_thumb.jpg"
+                  class="img-fluid img-thumbnail " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">APPLE Watch SE GPS</h5>
+                  <p class="card-text small">Cassa 44 mm in Alluminio
+                    Display Retina OLED LTPO Luminosità 1000 nit
+                  </p>
+                  <a href="./Prodotto.html" class="btn text-white bg-color-accent" target="_blank">Dettagli</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="card card-custom mt-5 border-costum " style="width: 15rem; border-radius: 15px; ">
+                <img src="https://img1.stcrm.it/images/17573093/HOR_STD/800x/ducati-panigale-v4-r-2019-02.jpg"
+                  class="img-fluid img-thumbnail " alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Ducati Panigale</h5>
+                  <p class="card-text small">Ducati Panigale asd asd asd
+                    asd panigale ducati nuovo 2020
+                  </p>
+                  <a href="./Prodotto.html" class="btn text-white bg-color-accent" target="_blank">Dettagli</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr style="margin-top: 10% !important;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center mt-5 mb-5">
+          <img src="https://www.mediaworld.it/frontend/2019-05/100419_banner150x115_30_nuovo_0.png" width="200px"
+            class="img-fluid">
+          <img src="https://www.mediaworld.it/frontend/2018-11/banner6_dsk.png" width="200px" class="img-fluid">
+          <img src="https://www.mediaworld.it/frontend/2020-05/linear_1.jpg" width="200px" class="img-fluid">
+          <img src="https://www.mediaworld.it/frontend/2020-07/IBL_Banner_MediaWorld_ContosuIBL_300x229_2_0.jpg"
+            width="200px" class="img-fluid">
+        </div>
+      </div>
+    </div>
+    <hr style="margin-bottom: 10% !important;">
+
+
+
+
+
+
+    <!--               FORM NEWSLETTER             -->
+
+    <div class="container mt-5" id="distanceForm">
+      <div class="row">
+        <div class="col-12">
+          <span id="FormTitolo">Iscriviti alla nostra <span class="color-pe logo-font">newsletter!</span></span>
+          <p id="paragrafoForm">Riceverai sconti, offerte promozionali , e tanto altro ancora!</p>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control modifica-form" placeholder="Email..."
+              aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn modifica-bottone" type="button" id="button-addon2">Invia!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--              FOOTER             -->
+
+  <div class="container-fluid footer-color">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-3 text-white mt-5 ml-3">
+        <span class="font-weight-bold">Per conoscerci meglio</span> <br>
+        Opportunità di lavoro<br>
+        Conosci Muvt!<br>
+        Sostenibilità
+      </div>
+      <div class="col-12 col-md-3 text-white mt-5">
+        <span class="font-weight-bold">Bisogno di aiuto?</span> <br>
+        Visualizza o traccia un ordine<br>
+        Restituisci o sostituisci articoli<br>
+        Servizio Clienti<br>
+        Garanzia legale<br>
+      </div>
+      <div class="col-12 col-md-3 text-white mt-5">
+        <b>Metodi di pagamento Muvt!</b><br>
+        Metodi di pagamento<br>
+        Convertitore di Valuta Muvt!<br>
+        Buoni Regalo<br>
+        Ricarica online<br>
+        Ricarica in cassa<br>
+      </div>
+
+      <div class="container-fluid mt-5">
+        <div class="row mt-5 text-center">
+          <div class="col-12 ">
+
+            <span class="logo-footer ml-n5">Muvt<span class="finalelogo-footer">!</span></span>
+          </div>
+          <div class="col-12 link-footer">
+            <a href="#" class=" text-decoration-none"> Australia -</a>
+            <a href="#" class=" text-decoration-none"> Brasile -</a>
+            <a href="#" class=" text-decoration-none"> Canada -</a>
+            <a href="#" class=" text-decoration-none">Cina - </a>
+            <a href="#" class=" text-decoration-none"> Francia -</a>
+            <a href="#" class=" text-decoration-none">Germania -</a>
+            <a href="#" class=" text-decoration-none"> Giappone -</a>
+            <a href="#" class=" text-decoration-none"> India -</a>
+            <a href="#" class=" text-decoration-none"> Messico -</a>
+            <a href="#" class=" text-decoration-none"> Stati Uniti -</a>
+            <a href="#" class=" text-decoration-none"> Regno Unito -</a>
+            <a href="#" class=" text-decoration-none"> Spagna -</a>
+            <a href="#" class=" text-decoration-none"> Singapore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="ModalLogin" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <a href="./registrazione.html" target="_blank" class="text-decoration-none">Non sei ancora registrato?</a>
+          </form>
+        </div>
+
+        <div>
+          <button type="button" class=" float-right mb-4 mr-4  btn btn-primary">Invia</button>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"></script>
+
+    <script>
+
+      $('.card-carousel').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        dots: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+
+      });
+
+    </script>
+
+
+
+    <script>
+
+      $('.ultimi-arrivi').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: true,
+        autoplaySpeed: 2000,
+
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+
+      });
+
+    </script>
+
+
+</body>
+
+</html>
